@@ -24,7 +24,9 @@
     - Bar chart for Vaccination Completed by Age Group
       # View the Tableau Public Dashboard -->
       -- Chart 1 --> https://public.tableau.com/views/COVID-19VaccinationTrendsbyAgeGroup/COVID-19VaccinationTrendsbyAgeGroup?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+      
       -- Chart 2 --> https://public.tableau.com/views/7-DayAverageCaseTrendOverTime/7-DayAverageCaseTrendOverTimeDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+      
       # Data Source
       - Kaggle Dataset --> [rows.csv](https://github.com/user-attachments/files/20217226/rows.csv)
       ## Challenges Faced

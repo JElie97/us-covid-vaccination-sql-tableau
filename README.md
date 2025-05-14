@@ -22,7 +22,7 @@
     - Line chart for 7-Day Average Case Trend Over Time
     - Line chart for Vaccination Progress Over Time
     - Bar chart for Vaccination Completed by Age Group
-      # View the Tableau Public Dashboard -->
+      # View the Tableau Public Dashboard 
       -- Chart 1 --> https://public.tableau.com/views/COVID-19VaccinationTrendsbyAgeGroup/COVID-19VaccinationTrendsbyAgeGroup?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
       
       -- Chart 2 --> https://public.tableau.com/views/7-DayAverageCaseTrendOverTime/7-DayAverageCaseTrendOverTimeDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link

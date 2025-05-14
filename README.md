@@ -16,15 +16,17 @@
     - Checked for and handled nulls
     - Added a primary key column
     - Exported the cleaned dataset as a '.csv'
-    # See the full cleaning steps here -->
+    # See the full cleaning steps here --> 
     # Step 2: Visualization in Tableau Public
     - I designed multiple visualizations:
     - Line chart for 7-Day Average Case Trend Over Time
     - Line chart for Vaccination Progress Over Time
     - Bar chart for Vaccination Completed by Age Group
       # View the Tableau Public Dashboard -->
+      -- Chart 1 --> https://public.tableau.com/views/COVID-19VaccinationTrendsbyAgeGroup/COVID-19VaccinationTrendsbyAgeGroup?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+      -- Chart 2 --> https://public.tableau.com/views/7-DayAverageCaseTrendOverTime/7-DayAverageCaseTrendOverTimeDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
       # Data Source
-      - Kaggle Dataset -->
+      - Kaggle Dataset --> [rows.csv](https://github.com/user-attachments/files/20217226/rows.csv)
       ## Challenges Faced
       - Primary Key issues:My dataset didn't come with a unique identifier, so I had to create one manually to handle duplicates.
       - Duplicate deletion error:MySQL returned error code 1288 when trying to delete duplicates using a CTE, so I used an alternative method with a temporary table.

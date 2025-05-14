@@ -1,0 +1,24 @@
+-- Step 1: Add a primary key
+ALTER TABLE vaccinations
+ADD COLUMN id INT PRIMARY KEY AUTO_INCREMENT;
+-- Step 2:Check for duplicates
+select `Date Administered`,
+AgeGroupVacc,
+`7-day_avg_group_cases_per_100k`,
+Administered_Dose1_pct_agegroup,
+Series_Complete_Pop_pct_agegroup,
+count(*) as duplicate_count
+from vaccinations
+group by `Date Administered`,
+AgeGroupVacc,
+`7-day_avg_group_cases_per_100k`,
+Administered_Dose1_pct_agegroup,
+Series_Complete_Pop_pct_agegroup
+having count(*) > 1;
+-- Step 3:Check for NULLs
+select 	sum(CASE WHEN `Date Administered` IS NULL THEN 1 ELSE 0 END) AS Missing_Date_Administered,
+sum(Case WHEN AgeGroupVacc IS NULL THEN 1 ELSE 0 END) AS Missing_GroupVacc,
+sum(CASE WHEN `7-day_avg_group_cases_per_100k` IS NULL THEN 1 ELSE 0 END) AS Missing_7day_Avg,
+sum(CASE WHEN Administered_Dose1_pct_agegroup IS NULL THEN 1 ELSE 0 END) AS Missing_Administered_Dose1,
+sum(CASE WHEN Series_Complete_Pop_pct_agegroup IS NULL THEN 1 ELSE 0 END) AS Missing_Series
+from vaccinations;

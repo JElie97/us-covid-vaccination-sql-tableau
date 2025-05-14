@@ -22,3 +22,12 @@ sum(CASE WHEN `7-day_avg_group_cases_per_100k` IS NULL THEN 1 ELSE 0 END) AS Mis
 sum(CASE WHEN Administered_Dose1_pct_agegroup IS NULL THEN 1 ELSE 0 END) AS Missing_Administered_Dose1,
 sum(CASE WHEN Series_Complete_Pop_pct_agegroup IS NULL THEN 1 ELSE 0 END) AS Missing_Series
 from vaccinations;
+-- Step 4: Remove rows where key metrics are NULL(only if needed)
+ DELETE FROM vaccinations
+WHERE 'Date Administred' is NULL
+OR AgeGroupVacc IS NULL
+OR '7-day_avg_group_cases_per_100k' IS NULL
+OR Administred_Dose1_pct_agegroup IS NULL
+OR Series_Complete_Pop_pct_agegroup IS NULL;
+-- Step 5: Export cleaned data to CSV(done outside MySQL using expert tools or SELECT INTO OUTFILE)
+

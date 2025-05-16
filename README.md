@@ -17,7 +17,7 @@
     - Added a primary key column
     - Exported the cleaned dataset as a '.csv'
     # See the full cleaning steps here:
-    -- (./files/covid_vaccines_sql_project.sql)
+    -- [(./files/covid_vaccines_sql_project.sql)](https://github.com/JElie97/us-covid-vaccination-sql-tableau/blob/main/covid%20vaccines%20sql%20project.sql)
     # Step 2: Visualization in Tableau Public
     - I designed multiple visualizations:
     - Line chart for 7-Day Average Case Trend Over Time

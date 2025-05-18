@@ -1,29 +1,28 @@
-# us-covid-vaccination-sql-tableau
 # U.S. COVID-19 Vaccination Trends (SQL + Tableau Public Project)
 - This project explores U.S. COVID-19 vaccination trends using SQL for data and Tableau Public
-# Tools Used
+## Tools Used
 - MySQL
 - Tableau Public
 - Microsoft Excel (Web Version for initial viewing)
 - Kaggle (data source)
-  # Project Objectives
+  ## Project Objectives
   - Clean and Prepare raw COVID-19 vaccination data using MySQL
   - Analyze the 7-day trends and vaccinations rates by age group
   - Visualize insights with Tableau dashboards
-    # Step 1: Data Cleaning in MySQL
+    ## Step 1: Data Cleaning in MySQL
     - Key Cleaning Steps:
     - Remove Duplicates
     - Checked for and handled nulls
     - Added a primary key column
     - Exported the cleaned dataset as a '.csv'
-    # See the full cleaning steps here:
+    ## See the full cleaning steps here:
     -- [(./files/covid_vaccines_sql_project.sql)](https://github.com/JElie97/us-covid-vaccination-sql-tableau/blob/main/covid%20vaccines%20sql%20project.sql)
-    # Step 2: Visualization in Tableau Public
-    - I designed multiple visualizations:
+    ## Step 2: Visualization in Tableau Public
+    ### I designed multiple visualizations:
     - Line chart for 7-Day Average Case Trend Over Time
     - Line chart for Vaccination Progress Over Time
     - Bar chart for Vaccination Completed by Age Group
-    # Dashboard Previews
+    ## Dashboard Previews
     ![7-Day Average Case Tren Over Time](https://github.com/user-attachments/assets/6e21dfcb-546a-4ca5-b9a1-a658ee624f4b)
     ![Vaccination age group   progress over time](https://github.com/user-attachments/assets/021deeda-3965-4734-8a6f-dca0c6d209e2)
 
@@ -33,7 +32,7 @@
       
       -- Chart 2 --> https://public.tableau.com/views/7-DayAverageCaseTrendOverTime/7-DayAverageCaseTrendOverTimeDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
       
-      # Data Source
+      ## Data Source
       - Kaggle Dataset --> [rows.csv](https://github.com/user-attachments/files/20217226/rows.csv)
       ## Challenges Faced
       - Primary Key issues:My dataset didn't come with a unique identifier, so I had to create one manually to handle duplicates.
@@ -45,6 +44,6 @@
         - Stronger understanding of data cleaning with sql
         - Gained experience in publishing visual dashboards to Tableau Public
         - Learned how to prep data across tools for analysis storytelling
-          # Next Steps
+          ## Next Steps
           - I plan to explore more datasets with SQL and Tableau Public and add more projects to my portfolio.
           - In addition, I want to incorporate excel along with SQL and Tableau into future projects and add it to my portfolio.

@@ -35,7 +35,7 @@
       ## Data Source
       - Kaggle Dataset --> [rows.csv](https://github.com/user-attachments/files/20217226/rows.csv)
       ## Challenges Faced
-      - Primary Key issues:My dataset didn't come with a unique identifier, so I had to create one manually to handle duplicates.
+      - Primary Key issues: My dataset didn't come with a unique identifier, so I had to create one manually to handle duplicates.
       - Duplicate deletion error:MySQL returned error code 1288 when trying to delete duplicates using a CTE, so I used an alternative method with a temporary table.
       - NULL Detection:I made syntax mistakes while checking for NULL values and learned the correct way to write conditional aggregation queries.
       - Chart Formatting issue in Tableau: Tableau Public initially displayed the wrong chart types (like Gantt instead line).I had to troubleshoot the axis formatting and adjust container layout.

@@ -41,7 +41,7 @@
       - Chart Formatting issue in Tableau: Tableau Public initially displayed the wrong chart types (like Gantt instead line).I had to troubleshoot the axis formatting and adjust container layout.
       - Dashboard Layout: My dashboard layout breaking after publishing. It took trial and error using "Tiled" layout and setting dashboard size to "Fit All" to get a clean look.
         ## Key Takeaways from the project
-        -Stronger understanding of data cleaning with sql
+        - Stronger understanding of data cleaning with sql
         - Gained experience in publishing visual dashboards to Tableau Public
         - Learned how to prep data across tools for analysis storytelling
           ## Next Steps
